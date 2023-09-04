@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:nth-child(even) {
+  background: #656fcb;
+}
+
+.cell:nth-child(odd) {
+  background: #808dff;
+}
+
+/* .odd-cell {
+  background: #808dff;
+}
+
+.even-cell {
+  background: #656fcb;
+} */
+
+.board {
+  display: grid;
+}
+
+.board-easy {
+  grid-template-columns: 50px 50px 50px 50px 50px;
+}
+
+.board-medium {
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.board-hard {
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+}
